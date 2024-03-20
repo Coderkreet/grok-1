@@ -1,4 +1,4 @@
-# Grok-1
+# Grok-1:-
 
 This repository contains JAX example code for loading and running the Grok-1 open-weights model.
 
@@ -18,7 +18,7 @@ The script loads the checkpoint and samples from the model on a test input.
 Due to the large size of the model (314B parameters), a machine with enough GPU memory is required to test the model with the example code.
 The implementation of the MoE layer in this repository is not efficient. The implementation was chosen to avoid the need for custom kernels to validate the correctness of the model.
 
-# Model Specifications
+# Model Specifications :-
 
 Grok-1 is currently designed with the following specifications:
 
@@ -34,7 +34,7 @@ Grok-1 is currently designed with the following specifications:
   - Supports activation sharding and 8-bit quantization
 - **Maximum Sequence Length (context):** 8,192 tokens
 
-# Downloading the weights
+# Downloading the weights :-
 
 You can download the weights using a torrent client and this magnet link:
 
@@ -49,7 +49,7 @@ pip install huggingface_hub[hf_transfer]
 huggingface-cli download xai-org/grok-1 --repo-type model --include ckpt-0/* --local-dir checkpoints --local-dir-use-symlinks False
 ```
 
-# License
+# License :-
 
 The code and associated Grok-1 weights in this release are licensed under the
 Apache 2.0 license. The license only applies to the source files in this
